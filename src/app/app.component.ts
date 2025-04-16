@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsComponent } from './forms/forms.component';
+import { CommonModule } from '@angular/common';
+import { RouterLink,RouterModule } from '@angular/router';
+import { MeetingsComponent } from "./meetings/meetings.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css', 
 })
 export class AppComponent {
-  title = 'capstone';
+  title = `Anna's Architectual Firm`;
 }
